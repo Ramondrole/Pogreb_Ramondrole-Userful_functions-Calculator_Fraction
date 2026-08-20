@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramondrole - Калькулятор дробей</title>
+    <link rel="icon" href="./Ramondrole.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fraction-calculator.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">RAMONDROLE</div>
+        <div class="nav-links">
+            <a href="https://ramondrole.github.io/Pogreb_Ramondrole-About_me/" data-key="about">Обо мне</a>
+            <a href="https://ramondrole.github.io/Pogreb_Ramondrole-Games/" data-key="games">Наши игры</a>
+            <a href="https://ramondrole.github.io/Pogreb_Ramondrole-Userful_functions/" data-key="functions">Полезные функции</a>
+        </div>
+        <div class="language-switcher">
+            <button class="lang-btn" id="langBtn">🌐 RU</button>
+            <ul class="lang-dropdown">
+                <li><a href="#" data-lang="ru">🇷🇺 Русский</a></li>
+                <li><a href="#" data-lang="en">🇺🇸 English</a></li>
+                <li><a href="#" data-lang="de">🇩🇪 Deutsch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="fraction-calculator-wrapper">
+        <div class="header">
+            <h1 data-key="title">Калькулятор дробей</h1>
+            <p data-key="subtitle">от Ramondrole</p>
+        </div>
+
+        <div class="calculator">
+            <div class="input-group">
+                <div class="fraction-input">
+                    <input type="text" id="num1" placeholder="Числитель">
+                    <div class="fraction-line"></div>
+                    <input type="text" id="den1" placeholder="Знаменатель">
+                </div>
+
+                <div class="operator-select">
+                    <button class="operator-btn" data-op="+">+</button>
+                    <button class="operator-btn" data-op="-">-</button>
+                    <button class="operator-btn" data-op="*">×</button>
+                    <button class="operator-btn" data-op="/">÷</button>
+                </div>
+
+                <div class="fraction-input">
+                    <input type="text" id="num2" placeholder="Числитель">
+                    <div class="fraction-line"></div>
+                    <input type="text" id="den2" placeholder="Знаменатель">
+                </div>
+            </div>
+
+            <button class="calculate-btn" data-key="calculateBtn">ВЫЧИСЛИТЬ</button>
+
+            <div class="result" id="result">
+                Результат появится здесь...
+            </div>
+        </div>
+    </div>
+
+    <script src="fraction-calculator.js"></script>
+</body>
+</html>
